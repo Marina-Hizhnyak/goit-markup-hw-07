@@ -11,13 +11,11 @@
   color: var(--title-text-color);
 }
 
-.logo-white {
+.footer__logo--color {
+  color: var(--accent-text-color);
+}
+.footer__logo {
   color: var(--h1-text-color);
-  font-family: var(--title-font);
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  display: flex;
+  display: block;
   margin-bottom: 20px;
-  font-weight: 700;
 }
