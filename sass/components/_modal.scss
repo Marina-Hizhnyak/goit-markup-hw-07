@@ -31,7 +31,7 @@
 }
 
 /* модальное окно */
-.form-input {
+.form__input {
   position: relative;
   display: block;
   width: 448px;
@@ -43,8 +43,19 @@
   box-sizing: border-box;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-text-color);
+    cursor: pointer;
+    outline: none;
+  }
+  &:hover + .form__icon,
+  &:focus + .form__icon {
+    fill: var(--accent-text-color);
+  }
 }
-.form-input-comment {
+.form__input-comment {
   width: 448px;
   height: 120px;
   resize: none;
@@ -53,8 +64,15 @@
   padding: 12px 16px;
   margin-bottom: 20px;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-text-color);
+    cursor: pointer;
+    outline: none;
+  }
 }
-.form-label {
+.form__label {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -64,7 +82,7 @@
   text-align: left;
 }
 
-.form-title {
+.form__title {
   font-size: 20px;
   font-style: 700;
   line-height: 1.15;
@@ -73,14 +91,13 @@
   padding-bottom: 12px;
   letter-spacing: 0.03em;
 }
-.form-field {
+.form__field {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-
-.icon {
+.form__icon {
   position: absolute;
   left: 15px;
   top: 50%;
@@ -89,23 +106,7 @@
 .agreement {
   color: var(--accent-text-color);
 }
-.form-input:hover,
-.form-input:focus {
-  border-color: var(--accent-text-color);
-  cursor: pointer;
-  outline: none;
-}
-.form-input:hover + .icon,
-.form-input:focus + .icon {
-  fill: var(--accent-text-color);
-}
 
-.form-input-comment:hover,
-.form-input-comment:focus {
-  border-color: var(--accent-text-color);
-  cursor: pointer;
-  outline: none;
-}
 .checkbox-agree {
   display: inline-block;
   width: 16px;
