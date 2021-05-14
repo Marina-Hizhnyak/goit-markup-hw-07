@@ -57,8 +57,6 @@ ul {
   overflow: hidden;
 }
 .title {
-  // display: flex;
-  // align-items: center;
   justify-content: center;
   color: var(--title-text-color);
   padding-bottom: 50px;
@@ -66,5 +64,8 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  // font-weight: 700;
+}
+.overlay-hidden {
+  position: relative;
+  overflow: hidden;
 }
